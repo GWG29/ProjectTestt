@@ -1,0 +1,108 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set primary colors */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark grey text */
+}
+
+header {
+    background-color: #006400; /* Dark green header */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: #ffffff; /* White text */
+    font-size: 24px;
+}
+
+.content {
+    flex: 1; /* Allow the content area to grow and fill remaining vertical space */
+    background-color: #f2f2f2; /* Light grey content area */
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd; /* Light grey border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #006400; /* Dark green button */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #006400; /* Dark green footer */
+    padding: 20px;
+    text-align: center;
+    color: #ffffff; /* White text */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+    padding: 10px;
+}
+
+.footer-bottom {
+    background-color: #008000; /* Dark green footer bottom */
+    padding: 10px;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media li a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Additional styles or modifications can be added below */
