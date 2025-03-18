@@ -1,0 +1,136 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set primary colors */
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+header {
+    background-color: var(--header-bg);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: background-color var(--transition-speed) ease;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: #ffffff; /* White text */
+    font-size: 24px;
+}
+
+.content {
+    flex: 1; /* Allow the content area to grow and fill remaining vertical space */
+    background-color: #f2f2f2; /* Light grey content area */
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    transition: border-color var(--transition-speed) ease, background-color var(--transition-speed) ease;
+}
+
+button {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    font-family: var(--font-family);
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+    
+    form input,
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+footer {
+    background-color: var(--header-bg);
+    padding: 20px;
+    text-align: center;
+    color: #ffffff; /* White text */
+    transition: background-color var(--transition-speed) ease;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%;
+    padding: 10px;
+}
+
+.footer-bottom {
+    background-color: #008000; /* Dark green footer bottom */
+    padding: 10px;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media li a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Additional styles or modifications can be added below */

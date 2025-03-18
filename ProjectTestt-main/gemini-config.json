@@ -1,0 +1,39 @@
+{
+  "api": {
+    "key": "AIzaSyChgYVYwsss6cSu57Z1jSCCzoS0lp6ak2Q",
+    "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+    "model": "gemini-2.0-flash"
+  },
+  "conversation": {
+    "history_limit": 10,
+    "save_history": true
+  },
+  "responses": {
+    "welcome": "Hello! I'm your AI assistant. How can I help you today?",
+    "error": "Sorry, I encountered an error. Please try again.",
+    "fallback": "I'm not sure how to respond to that. Could you provide more details?"
+  },
+  "predefined_responses": [
+    {
+      "keywords": ["hello", "hi", "hey"],
+      "response": "Hello there! How can I assist you today?"
+    },
+    {
+      "keywords": ["how are you"],
+      "response": "I'm just a program, but I'm functioning well! How can I help you?"
+    },
+    {
+      "keywords": ["weather"],
+      "response": "I don't have access to real-time weather data, but I can help you find a weather service!"
+    },
+    {
+      "keywords": ["thank"],
+      "response": "You're welcome! Is there anything else I can help with?"
+    }
+  ],
+  "settings": {
+    "use_api": true,
+    "use_predefined_responses": false,
+    "typing_indicator_delay": 1000
+  }
+}

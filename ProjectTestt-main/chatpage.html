@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="theme.js" defer></script>
+    <script src="chat.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="https://cdn-icons-png.flaticon.com/512/4431/4431852.png" alt="Logo"></a>
+      </div>
+      <h1>Chat Page</h1>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <img src="moon.svg" alt="Switch to dark mode">
+      </button>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <h3>Contacts</h3>
+        <div class="search-box">
+          <input type="text" placeholder="Search contacts...">
+        </div>
+        <ul class="users">
+          <li class="user active">
+            <div class="user-info">
+              <span class="status-dot online"></span>
+              <div class="user-details">
+                <span class="user-name">User 1</span>
+                <span class="user-status">Online</span>
+              </div>
+            </div>
+          </li>
+          <li class="user">
+            <div class="user-info">
+              <span class="status-dot online"></span>
+              <div class="user-details">
+                <span class="user-name">User 2</span>
+                <span class="user-status">Online</span>
+              </div>
+            </div>
+          </li>
+          <li class="user">
+            <div class="user-info">
+              <span class="status-dot offline"></span>
+              <div class="user-details">
+                <span class="user-name">User 3</span>
+                <span class="user-status">Offline</span>
+              </div>
+            </div>
+          </li>
+          <li class="user">
+            <div class="user-info">
+              <span class="status-dot online"></span>
+              <div class="user-details">
+                <span class="user-name">User 4</span>
+                <span class="user-status">Online</span>
+              </div>
+            </div>
+          </li>
+          <li class="user">
+            <div class="user-info">
+              <span class="status-dot offline"></span>
+              <div class="user-details">
+                <span class="user-name">User 5</span>
+                <span class="user-status">Offline</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="chat">
+        <div class="chat-header">
+          <div class="chat-user">
+            <span class="status-dot online"></span>
+            <span>User 1</span>
+          </div>
+          <div class="chat-actions">
+            <button title="Video Call"><i class="fas fa-video"></i></button>
+            <button title="Voice Call"><i class="fas fa-phone"></i></button>
+            <button title="More Options"><i class="fas fa-ellipsis-v"></i></button>
+          </div>
+        </div>
+        <div class="messages">
+          <!-- Messages will be added dynamically by JavaScript -->
+        </div>
+        <div class="input">
+          <form>
+            <input type="text" placeholder="Type your message...">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
